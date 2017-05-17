@@ -1,5 +1,5 @@
 #RPG - Reddit Post Getter#
-#           2.0          #          
+#           2.1          #          
 ##########################
 
 #import modules
