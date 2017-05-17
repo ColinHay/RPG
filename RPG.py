@@ -13,7 +13,7 @@ reddit = praw.Reddit(client_id='vaBsxDjQvk5jWA',
                      user_agent='Windows:RPG:2.0 (by /u/coli_ha)')
 
 #connect to slack
-slack = Slacker('xoxb-183678733280-LKhTHZGbtiXJSbXs7PKmt5IQ')
+slack = Slacker('')
 
 #Lists of subreddits, keywords, and posted items as well as a dictionary for newPosts
 subreddits = ['space', 'astronomy', 'astrophotography',
