@@ -1,5 +1,5 @@
 #RPG - Reddit Post Getter#
-#           2.1          #          
+#           2.2          #          
 ##########################
 
 #import modules
@@ -8,22 +8,19 @@ import time
 from slacker import Slacker
 
 #create reddit instance
-reddit = praw.Reddit(client_id='vaBsxDjQvk5jWA',
-                     client_secret='81M6u2rXtrP-kGF1KKg99LSwRuY',
-                     user_agent='Windows:RPG:2.0 (by /u/coli_ha)')
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
+                     user_agent='')
 
 #connect to slack
 slack = Slacker('')
 
-#Lists of subreddits, keywords, and posted items as well as a dictionary for newPosts
-subreddits = ['space', 'astronomy', 'astrophotography',
-              'cosmos', 'cosmology', 'telescopes',
-              'moon', 'comets']
+#Lists of subreddits and keywords which should be populated before running
+subreddits = []
+keywords = []
 
-keywords = ['space', 'telescope', 'slooh',
-            'moon', 'eclipse', 'astronomy',
-            'planet']
-
+#NewPosts is a dictionary to hold data about new posts, posted keeps track of
+#what posts have been pushed to Slack to avoid duplicate posts
 newPosts = {}
 posted = []
 
